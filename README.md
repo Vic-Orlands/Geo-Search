@@ -1,2 +1,2 @@
-# Andela-Foundation-Project
-My repository on my Andela Project
+# Geo-Search
+My repository on Andela Foundation Project
