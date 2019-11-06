@@ -1,0 +1,178 @@
+/* The header styling starts here */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div,
+h1,
+li {
+  display: block;
+  color: rgb(228, 217, 217);
+}
+h1 {
+  font: 28px sans-serif;
+  text-align: center;
+}
+li {
+  font: 14px sans-serif;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f3952;
+  color: white;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+}
+.headerContainer h1 {
+  margin: auto 20px;
+}
+.headerLinks {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.headerLinks li {
+  list-style: none;
+  padding: 40px 15px;
+}
+.headerLinks li:hover {
+  text-decoration: underline;
+}
+
+/* The body styling starts here */
+
+body {
+  background-color: rgb(40, 81, 100);
+}
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0f3952;
+  color: white;
+  height: 10vh;
+  align-items: center;
+  background: url(ice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+/* Here, i styled the input text field 
+and also styled the placeholder giving it a textalign of center */
+
+.inputField {
+  height: 40px;
+  width: 450px;
+  background: rgb(201, 227, 238);
+  opacity: 0.7;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+.inputField::placeholder {
+  text-align: center;
+  color: black;
+}
+.bodyContainer h4 {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: steelblue;
+  margin: 26px 0 0 0;
+}
+
+/* The map and weather stylings starts here */
+
+.viewContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.mapContainer h2 {
+  font: 32px sans-serif;
+  text-align: center;
+  color: rgb(228, 217, 217);
+}
+.mapImage {
+  height: 450px;
+  widows: 450px;
+  margin-top: 30px;
+}
+.weatherContainer {
+  color: rgb(228, 217, 217);
+  margin-top: 120px;
+}
+.weatherContainer h2 {
+  font: 32px sans-serif;
+  margin-bottom: 20px;
+}
+.weatherContainer li {
+  font: 20px sans-serif;
+  list-style: none;
+}
+
+/* The Landmark styling starts here */
+
+.landmarkContainer {
+  border-top: 2px solid grey;
+  margin-top: 30px;
+  text-align: center;
+}
+.landmarkContainer h2 {
+  font: 32px sans-serif;
+  color: rgb(228, 217, 217);
+  margin: 28px 0 0 5px;
+}
+.landmarkContainer p {
+  font: 20px sans-serif;
+}
+.landmarkImageContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 45px 0;
+}
+.landmarkImageContainer img {
+  height: 420px;
+  width: 570px;
+}
+.landmarkImageContainer img:hover {
+  height: 422px;
+  width: 590px;
+  transition: ease;
+  transition-duration: 0.6s;
+}
+
+/* The footer styling starts here */
+footer {
+  background-color: #0f3952;
+  color: white;
+  height: 25vh;
+}
+.footerLinks ul {
+  display: flex;
+  justify-content: center;
+}
+.footerLinks ul li {
+  font: 20px sans-serif;
+  padding: 30px;
+}
+.footerLinks ul li:hover {
+  text-decoration: underline;
+}
+hr {
+  width: 60%;
+  margin: auto;
+}
+footer p {
+  font: 20px sans-serif;
+  text-align: center;
+  margin-top: 25px;
+}
