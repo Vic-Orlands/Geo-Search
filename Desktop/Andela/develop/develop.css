@@ -176,3 +176,66 @@ footer p {
   text-align: center;
   margin-top: 25px;
 }
+
+/* The responsiveness styling starts here...on mobile having screen-size of 584px */
+
+@media screen and (max-width: 900px) and (min-width: 580px) {
+  .headerContainer {
+    height: 20vh;
+  }
+  .viewContainer {
+    display: grid;
+  }
+  .weatherContainer h2 {
+    text-align: center;
+  }
+  .weatherContainer li {
+    margin-left: 59px;
+  }
+  .socialPar {
+    float: right;
+  }
+  .landmarkImageContainer {
+    display: grid;
+    grid-row-gap: 60px;
+  }
+  .landmarkImageContainer img {
+    height: 400px;
+    width: 570px;
+  }
+  footer {
+    height: 30vh;
+  }
+}
+
+/* The responsiveness styling starts here...on mobile having screen-size of 584px */
+
+@media screen and (max-width: 584px) {
+  .headerContainer {
+    position: initial;
+    height: 15vh;
+  }
+  .viewContainer {
+    display: grid;
+  }
+  .weatherContainer h2 {
+    text-align: center;
+  }
+  .weatherContainer li {
+    margin-left: 59px;
+  }
+  .socialPar {
+    float: right;
+  }
+  .landmarkImageContainer {
+    display: grid;
+    grid-row-gap: 40px;
+  }
+  .landmarkImageContainer img {
+    height: 280px;
+    width: 420px;
+  }
+  footer {
+    height: 30vh;
+  }
+}
