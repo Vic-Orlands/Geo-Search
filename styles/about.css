@@ -1,0 +1,88 @@
+/* The header styling starts here */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div,
+h1,
+li {
+  display: block;
+  color: rgb(228, 217, 217);
+}
+h1 {
+  font: 28px sans-serif;
+  text-align: center;
+}
+li {
+  font: 14px sans-serif;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f3952;
+  color: white;
+  height: 10vh;
+  width: 100%;
+}
+.headerContainer h1 {
+  margin: auto 20px;
+}
+.headerLinks {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.headerLinks li {
+  list-style: none;
+  padding: 40px 15px;
+}
+.headerLinks a {
+  text-decoration: none;
+  color: rgb(228, 217, 217);
+}
+.headerLinks li:hover {
+  text-decoration: underline;
+}
+
+/* The About bosy styling starts here */
+body {
+  background-color: rgb(234, 234, 234);
+}
+.aboutBody {
+  text-align: center;
+  color: #0f3952;
+  border: 2px dotted #0f3952;
+  margin: 50px 120px;
+  word-spacing: 5px;
+}
+.aboutBody h2 {
+  font: 28px sans-serif;
+  margin-top: 20px;
+}
+hr {
+  width: 100px;
+  margin: auto;
+  border: 1.5px solid #0f3952;
+}
+.aboutBody p {
+  font: 20px sans-serif;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* The responsiveness styling starts here...on mobile having screen-size of 584px */
+
+@media screen and (max-width: 700px) and (min-width: 580px) {
+    .aboutBody {
+  margin: 50px 70px;
+}
+.aboutBody h2 {
+  font: 22px sans-serif;
+}
+.aboutBody p {
+  font: 16px sans-serif;
+  padding: 5px;
+}
+}
