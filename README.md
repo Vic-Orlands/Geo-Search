@@ -8,12 +8,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Prerequisites
 What things you need to install the software and how to install them
+
 A functional Computer
+
 A knowledge of git version control commands
 
 
 # Installing
 This is not a framework's project so no need for npm installing
+
 Simply fork into your repository, clone into your local repository and view at ease on your browser and you can make necessary adjustments where you seem fit
 
 
@@ -35,8 +38,11 @@ Add additional notes about how to deploy this on a live system
 
 # Built With
 HTML, CSS, and Vanilla Javascript - No framework used
+
 ESLint - Dependency Management
+
 Airbnb - Style coding guide
+
 Public APIs - Used to request and integrate HTTPS
 
 
