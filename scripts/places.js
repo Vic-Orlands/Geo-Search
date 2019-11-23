@@ -19,7 +19,6 @@ const searchApi = () => {
             <li> Pressure of ${getInputValue} is  ${data.main.pressure} </li>
             <li> Humidity of ${getInputValue} is  ${data.main.humidity} </li>
             <li> Weather of ${getInputValue} is  ${data.weather[0].main} </li>
-            <li> Wind of ${getInputValue} is  ${data.wind[0].deg}degrees </li>
             </ul>
             `
             console.log(data)
