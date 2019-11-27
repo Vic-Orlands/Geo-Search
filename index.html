@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>www.Geosearch.com</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
 
-  <body>
-    <!-- Header Body -->
-    <div class="headerContainer">
-      <h1>Geo-Search</h1> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>www.Geosearch.com</title>
+  <link rel="stylesheet" href="./styles/main.css" />
 
-      <div class="headerLinks">
-        <li><a href="../Geo-Search/index.html">Home</a></li>
+  <!-- this is the autocomplete javascript api -->
+  <script src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js"></script>
+
+  <!-- this is the map api links
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" /> -->
+</head>
+
+<body>
+  <!-- Header Body -->
+  <div class="headerContainer">
+    <h1>Geo-Search</h1>
+
+    <div class="headerLinks">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#map">View Map</a></li>
+      <li><a href="./components/about.html">About</a></li>
+    </div>
+  </div>
+
+  <!-- Body Tags -->
+  <div class="bodyContainer">
+    <div class="bodyInputField">
+      <input type="search" id="place-search-input" placeholder="Enter your Location" class="inputField" a />
+      <button class="btn"> Search </button>
+    </div>
+
+    <h4>View your place of interest from miles away</h4>
+  </div>
+
+  <div class="viewContainer">
+    <div class="mapContainer" id="map">
+      <h2>MAP VIEW</h2>
+      <div class="mapImage">
+        <img src="./assets/map.png" alt="My map"/>
+      </div>
+    </div>
+
+    <div class="weatherContainer">
+      <h2>WEATHER CONDITION</h2>
+
+      <ul class="weatherDisplay">
+        <li>Increasing Clouds</li>
+        <li>Low: 60 °F</li>
+        <li>Humidity 93%</li>
+        <li>Wind Speed SE 6 mph</li>
+        <li>Barometer 30.07 in (1017.6 mb)</li>
+        <li>Dewpoint 65°F (18°C)</li>
+        <li>Visibility 0.25 mi</li>
+        <li>Last update 5 Nov 2:53 am CST</li>
+      </ul>
+
+      <div class="socialPar">
+        <p>Share on Facebook</p>
+        <p>Facebook</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notable Landmarks Images -->
+  <div class="landmarkContainer">
+    <h2>LANDMARKS</h2>
+    <p>Check out some Images of Landmarks in your Location</p>
+
+    <div class="landmarkImageContainer">
+      <img src="./assets/use.jpeg" alt="My Landmark" class="landmarkImage" />
+      <img src="./assets/mainPic.jpeg" alt="My Landmark" class="landmarkImage" />
+    </div>
+  </div>
+
+  <!-- The Footer Body -->
+  <footer>
+    <div class="footerLinks">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="#map">View Map</a></li>
         <li><a href="./components/about.html">About</a></li>
-      </div>
+      </ul>
     </div>
 
-    <!-- Body Tags -->
-    <div class="bodyContainer">
-      <input type="text" placeholder="Enter your Location" class="inputField" />
-      <button class="btn"> Search </button>
-      <h4>View your place of interest from miles away</h4>
-    </div>
+    <hr />
 
-    <div class="viewContainer">
-      <div class="mapContainer" id="map">
-        <h2>MAP VIEW</h2>
-        <img src="./assets/map.png" alt="My map" class="mapImage" />
-      </div>
+    <p>Developed by Innocent Chimezie Victor &copy; 2019</p>
+  </footer>
+  <script src="./scripts/places.js"></script>
+</body>
 
-      <div class="weatherContainer">
-        <h2>WEATHER CONDITION</h2>
-
-        <ul class="weatherDisplay">
-          <li>Increasing Clouds</li>
-          <li>Low: 60 °F</li>
-          <li>Humidity 93%</li>
-          <li>Wind Speed SE 6 mph</li>
-          <li>Barometer 30.07 in (1017.6 mb)</li>
-          <li>Dewpoint 65°F (18°C)</li>
-          <li>Visibility 0.25 mi</li>
-          <li>Last update 5 Nov 2:53 am CST</li>
-        </ul>
-
-        <div class="socialPar">
-          <p>Share on Facebook</p>
-          <p>Facebook</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Notable Landmarks Images -->
-    <div class="landmarkContainer">
-      <h2>LANDMARKS</h2>
-      <p>Check out some Images of Landmarks in your Location</p>
-
-      <div class="landmarkImageContainer">
-        <img src="./assets/use.jpeg" alt="My Landmark" class="landmarkImage" />
-        <img
-          src="./assets/mainPic.jpeg"
-          alt="My Landmark"
-          class="landmarkImage" 
-        />
-      </div>
-    </div>
-
-    <!-- The Footer Body -->
-    <footer>
-      <div class="footerLinks">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#map">View Map</a></li>
-          <li><a href="./components/about.html">About</a></li>
-        </ul>
-      </div>
-
-      <hr />
-
-      <p>Developed by Innocent Chimezie Victor &copy; 2019</p>
-    </footer>
-    <script src="./scripts/places.js"></script>
-  </body>
 </html>

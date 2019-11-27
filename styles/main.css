@@ -92,6 +92,24 @@ and also styled the placeholder giving it a textalign of center */
   color: steelblue;
   margin: 26px 0 0 0;
 }
+.bodyInputField{
+  display: flex;
+}
+.bodyInputField button{
+  width: 90px;
+  height: 35px;
+  margin: 2px;
+  background: #2699db;
+  color: #0f3952;
+  border: 2px transparent;
+}
+.bodyInputField button:hover{
+  background-color: #0f3952;
+  color: #2699db;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.7s;
+}
 
 /* The map and weather stylings starts here */
 
@@ -105,7 +123,7 @@ and also styled the placeholder giving it a textalign of center */
   text-align: center;
   color: rgb(228, 217, 217);
 }
-.mapImage {
+.mapImage img{
   height: 450px;
   widows: 450px;
   margin-top: 30px;
@@ -185,6 +203,74 @@ footer p {
   margin-top: 25px;
 }
 
+/*Autocomplete styling begins here*/
+
+.mq-input::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+.mq-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none
+}
+.mq-input::-ms-clear {
+  display: none
+}
+.mq-input-icon {
+  display: none;
+}
+.mq-input-icon svg {
+  display: none;
+}
+.mq-dropdown-menu {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .2), 0 2px 4px 0 rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  margin-top: 3px;
+  overflow: hidden
+}
+.mq-result {
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 18px;
+  overflow: hidden
+}
+.mq-result .mq-name {
+  color: rgb(36, 34, 34)
+}
+.mq-result .mq-address {
+  font-size: smaller;
+  margin-left: 12px;
+  color: rgb(117, 116, 116)
+}
+.mq-result-icon {
+  margin-right: 10px;
+  width: 14px;
+  height: 20px;
+  vertical-align: middle;
+  color: white
+}
+.mq-result-icon svg {
+  -webkit-transform: scale(.9) translateY(2px);
+  transform: scale(.9) translateY(2px);
+  fill: #666
+}
+.mq-cursor {
+  background: #3b3b3b;
+}
+.mq-cursor .mq-result-icon svg {
+  -webkit-transform: scale(1) translateY(2px);
+  transform: scale(1) translateY(2px);
+  fill: #333
+}
+.mq-icon-clear {
+  cursor: pointer
+}
+
+
 /* The responsiveness styling starts here...on mobile having screen-size of 584px */
 
 @media screen and (max-width: 900px) and (min-width: 580px) {
@@ -215,6 +301,7 @@ footer p {
     height: 30vh;
   }
 }
+
 
 /* The responsiveness styling starts here...on mobile having screen-size of 584px */
 

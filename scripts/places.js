@@ -1,11 +1,12 @@
-// Lets get a hold of the necessary Html tags here
+// --------------------------------------------------------------------Lets first get a hold of the necessary Html tags here----------------------------------------------------------------------------------
 
 const inputField = document.querySelector('.inputField');
 const displayMap = document.querySelector('.mapImage');
 const searchButton = document.querySelector('.btn');
 const displayWeather = document.querySelector(".weatherDisplay")
 
-// the proxy below allows access to the fetched openweather api else the request will be blocked by CORD
+
+//------------------------------------------------------------ the proxy below allows access to the fetched openweather api else the request will be blocked by CORD----------------------------------------------------------------
 const proxy = "https://cors-anywhere.herokuapp.com/";
 
 const searchApi = () => {
@@ -23,22 +24,24 @@ const searchApi = () => {
             `
             console.log(data)
         })
-}
 
+    //-------------------------------------------------------Below is the API for the map images-------------------------------------------------------
+    const mapKey = '____';
+    const mapUrl = `https://www.mapquestapi.com/staticmap/v5/map?key=${mapKey}&locations=${getInputValue}&size=@2x&defaultMarker=marker-sm-22407F-3B5998&size=600,400@2x`;
+    fetch(mapUrl)
+        .then(res => {
+            console.log(res)
+            return displayMap.innerHTML = `<img src=${res.url} alt="Map Image" />`
+        })
+
+    inputField.value = " ";
+}
 searchButton.addEventListener('click', searchApi);
 
-// const facebookShare = document.querySelector(".socialPar");
+<<<<<<< HEAD
 
-// const fetchData = async () => {
-//     try {
-//         const api = `${proxy}http://api.openweathermap.org/data/2.5/weather?q=aba&APPID=362a01de21f783b5fe2d7b810777d82e`
-//         const response = await fetch(api)
-//         const responseJSON = await response.json()
-//         console.log(responseJSON)
-//         return responseJSON
-//     } catch (err) {
-//         console.error(err)
-//     }
-// }
-
-// fetchData()
+// ------------------------------------------------------Below is the API for autocompleting word searches---------------------------------------------------------
+placeSearch({
+    key: 'mCLzct0mrLbj8On3AFJkHJPx3bv7wYme',
+    container: document.querySelector('#place-search-input')
+});
