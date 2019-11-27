@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>www.Geosearch.com</title>
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
     <!-- Header Body -->
     <div class="headerContainer">
-      <h1>Geo-Search</h1>
+      <h1>Geo-Search</h1> 
 
       <div class="headerLinks">
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="../Geo-Search/index.html">Home</a></li>
         <li><a href="#map">View Map</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a href="./components/about.html">About</a></li>
       </div>
     </div>
 
     <!-- Body Tags -->
     <div class="bodyContainer">
       <input type="text" placeholder="Enter your Location" class="inputField" />
+      <button class="btn"> Search </button>
       <h4>View your place of interest from miles away</h4>
     </div>
 
     <div class="viewContainer">
       <div class="mapContainer" id="map">
         <h2>MAP VIEW</h2>
-        <img src="../assets/map.png" alt="My map" class="mapImage" />
+        <img src="./assets/map.png" alt="My map" class="mapImage" />
       </div>
 
       <div class="weatherContainer">
         <h2>WEATHER CONDITION</h2>
 
-        <ul>
+        <ul class="weatherDisplay">
           <li>Increasing Clouds</li>
           <li>Low: 60 °F</li>
           <li>Humidity 93%</li>
@@ -59,11 +60,11 @@
       <p>Check out some Images of Landmarks in your Location</p>
 
       <div class="landmarkImageContainer">
-        <img src="../assets/use.jpeg" alt="My Landmark" class="landmarkImage" />
+        <img src="./assets/use.jpeg" alt="My Landmark" class="landmarkImage" />
         <img
-          src="../assets/mainPic.jpeg"
+          src="./assets/mainPic.jpeg"
           alt="My Landmark"
-          class="landmarkImage"
+          class="landmarkImage" 
         />
       </div>
     </div>
@@ -74,7 +75,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#map">View Map</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="./components/about.html">About</a></li>
         </ul>
       </div>
 
@@ -82,6 +83,6 @@
 
       <p>Developed by Innocent Chimezie Victor &copy; 2019</p>
     </footer>
-    <script src="hey.js"></script>
+    <script src="./scripts/places.js"></script>
   </body>
 </html>
