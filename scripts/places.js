@@ -38,8 +38,6 @@ const searchApi = () => {
 }
 searchButton.addEventListener('click', searchApi);
 
-<<<<<<< HEAD
-
 // ------------------------------------------------------Below is the API for autocompleting word searches---------------------------------------------------------
 placeSearch({
     key: 'mCLzct0mrLbj8On3AFJkHJPx3bv7wYme',
