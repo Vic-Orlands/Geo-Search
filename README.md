@@ -15,25 +15,28 @@ A knowledge of git version control commands
 
 
 # Installing
-This is not a framework's project so no need for npm installing
+Simply fork into your repository, clone into your local repository 
 
-Simply fork into your repository, clone into your local repository and view at ease on your browser and you can make necessary adjustments where you seem fit
-
+npm install for the node_modules 
+and view at ease on your browser and you can make necessary adjustments where you seem fit
 
 
 Running the tests
 Explain how to run the automated tests for this system
 
+
 Break down into end to end tests
 Explain what these tests test and why
+
 
 Give an example
 And coding style tests
 Explain what these tests test and why
 
 Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+This site is deployed on two platforms; The GitHub pages and on netlify
+
+https://place-search.netlify.com/
 
 
 # Built With
