@@ -22,18 +22,23 @@ and view at ease on your browser and you can make necessary adjustments where yo
 
 
 Running the tests
+
 Explain how to run the automated tests for this system
 
 
 Break down into end to end tests
+
 Explain what these tests test and why
 
 
 Give an example
+
 And coding style tests
+
 Explain what these tests test and why
 
 Give an example
+
 This site is deployed on two platforms; The GitHub pages and on netlify
 
 https://place-search.netlify.com/
@@ -53,6 +58,7 @@ Public APIs - Used to request and integrate HTTPS
 No contributions
 
 Versioning
+
 We use SemVer for versioning. For the versions available, see the tags on this repository.
 
 
