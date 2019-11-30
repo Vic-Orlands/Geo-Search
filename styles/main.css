@@ -310,6 +310,11 @@ footer p {
     position: initial;
     height: 15vh;
   }
+  .bodyInputField {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .viewContainer {
     display: grid;
   }
