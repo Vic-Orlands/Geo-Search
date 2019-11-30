@@ -335,6 +335,11 @@ footer p {
     height: 280px;
     width: 420px;
   }
+  .landmarkImageContainer img:hover {
+    height: 300px;
+    width: 430px;
+    transition-duration: 0.4s;
+  }
   footer {
     height: 30vh;
   }
